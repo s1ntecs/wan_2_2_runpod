@@ -7,9 +7,10 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 COPY . .
-RUN pip install torch==2.4.0 \
+RUN pip install torch>=2.4.0 \
     torchvision \
-    git+https://github.com/huggingface/diffusers.git@refs/pull/11059/head \
+    # git+https://github.com/huggingface/diffusers.git@refs/pull/11059/head \
+    git+https://github.com/huggingface/diffusers \
     transformers \
     tokenizers>=0.20.3 \ 
     accelerate==1.4.0 \

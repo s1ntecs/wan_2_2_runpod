@@ -13,10 +13,10 @@ RUN pip install torch>=2.4.0 \
     git+https://github.com/huggingface/diffusers \
     transformers \
     tokenizers>=0.20.3 \ 
-    accelerate==1.4.0 \
-    huggingface-hub==0.29.1 \
+    accelerate>=1.4.0 \
+    huggingface-hub>=0.29.1 \
     requests==2.32.3 \
-    "numpy<2" \
+    numpy \
     ftfy \
     peft \
     regex \
